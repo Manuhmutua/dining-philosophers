@@ -49,11 +49,6 @@ func say(action string, id int) {
 	fmt.Printf("#%d is %s\n", id, action)
 }
 
-func init() {
-	// Random seed
-	rand.Seed(time.Now().UTC().UnixNano())
-}
-
 func main() {
 	// How many philosophers and forks
 	count := 5
